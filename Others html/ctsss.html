@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centeral Temple NSTU</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>Volunteer Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>Central Temple Sanatoni Student Sociaty</h2>
+            <p><strong>Duration:</strong> Septembar 2024 - February 2026</p>
+            <p><strong>Position:</strong> Event Management Secretary</p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+              <li>Saphahik Kirton (Weekly devotional gatherings with singing and prayers).</li>
+              <li>Celebration of all major Puja Parban (Hindu religious festivals throughout the year).</li>
+              <li>Presenting the Bhagavad Gita to freshers during orientation programs and farewell ceremony with honor to seniors.</li>
+              <li>Organizing Tirtha Yatra (spiritual trips to holy places).</li>
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/CTSSS/Mohaloya.jpg" alt="Description of Image" class="image">
+                <p class="text">As a dedicated member of the NSTU Sonatoni Student Society, I actively participate in organizing and executing various cultural and religious events
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      <section class="award-section">
+        <h2>Activities of NSTU Blood Brigade</h2>
+        <button id="showAwardBtn" class="showAwardBtn">Templa Festival</button>
+      
+        <div id="awardImageContainer" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CTSSS/Holi.jpg" alt="USC Award 1" class="award-image">
+            <h3>Holi Fest</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CTSSS/Jonmastomi.jpg" alt="USC Award 1" class="award-image">
+            <h3>Jonmastomi Festival</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CTSSS/Matri Boron.jpg" alt="USC Award 1" class="award-image">
+            <h3>Sarasati Debi Baran</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CTSSS/Ratyatra.jpg" alt="USC Award 1" class="award-image">
+            <h3>Ratyatra Celebration</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CTSSS/tirtha yatra.jpg" alt="USC Award 1" class="award-image">
+            <h3>Chondranath Titha Yatra </h3>
+          </div>
+          
+          
+        </div>
+      </section>
+
+
+      <section class="award-section">
+        
+        <button id="showAward" class="showAwardBtn">Award</button>
+      
+        <div id="awardImageContainers" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CTSSS/Lotery award.jpg" alt="USC Award 1" class="award-image">
+            <h3>Lottery Winner</h3>
+          </div>
+         
+        </div>
+      </section>
+
+      
+      
+
+      <script>
+        document.getElementById("showAwardBtn").addEventListener("click", function () {
+          var container = document.getElementById("awardImageContainer");
+          if (container.style.display === "none") {
+            container.style.display = "flex";
+            this.textContent = "Hide ";
+          } else {
+            container.style.display = "none";
+            this.textContent = "Temple Festival";
+          }
+        });
+      </script>
+
+<script>
+  document.getElementById("showAward").addEventListener("click", function () {
+    const awardContainer = document.getElementById("awardImageContainers");
+    if (awardContainer.style.display === "none") {
+      awardContainer.style.display = "flex";
+      this.textContent = "Hide Awards";
+    } else {
+      awardContainer.style.display = "none";
+      this.textContent = "Award";
+    }
+  });
+</script>
+
+      
+</body>
+</html>

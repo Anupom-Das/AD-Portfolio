@@ -1,0 +1,198 @@
+/* Basic */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    scroll-behavior: smooth;
+  }
+  
+  /* Section */
+  .about-more-section {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Profile Image */
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Typing Text */
+  .main-heading {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  .static-text {
+    font-weight: bold;
+  }
+  .typing-text {
+    color: #ff5722;
+    font-weight: bold;
+  }
+  
+  /* Info Table */
+  .info-table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .info-table td {
+    padding: 12px;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  .info-table td:hover {
+    color: #007bff;
+    transform: scale(1.05);
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin: 30px 0;
+  }
+  .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  .btn:hover {
+    background: #0056b3;
+  }
+  .download-btn i, .back-btn i {
+    margin-right: 8px;
+  }
+  
+  /* Certificates */
+  .certificate-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .main-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .main-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .sub-btn {
+    margin: 10px 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .sub-btn:hover {
+    background-color: #138496;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .image-container {
+    margin-top: 20px;
+  }
+  
+  #certificateImage {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #218838;
+  }
+  
+  
+  /* Social Links */
+  .social-links {
+    margin-top: 30px;
+  }
+  .social-links a {
+    color: #007bff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+  .social-links a:hover {
+    color: #ff5722;
+    transform: scale(1.2);
+  }
+
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .nav-buttons button {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  

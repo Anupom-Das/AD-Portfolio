@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me More - Anupom Das</title>
+  <link rel="stylesheet" href="more.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<section class="about-more-section">
+  
+  <img src="more pic/Anupom pic.jpg" alt="Profile Image" class="profile-img">
+
+  <h1 class="main-heading">
+    <span class="static-text">I'm </span>
+    <span class="typing-text" id="typing"></span>
+  </h1>
+
+  <table class="info-table">
+    <tr><td><strong>Name:</strong></td><td>Anupom Das</td></tr>
+    <tr><td><strong>Father's Name:</strong></td><td>Sawpon Das</td></tr>
+    <tr><td><strong>Mother's Name:</strong></td><td>Shilpe Das</td></tr>
+    <tr><td><strong>Address:</strong></td><td>Kaiblyadham, Akbarsha, Chattogram</td></tr>
+    <tr><td><strong>Nationality:</strong></td><td>Bangladeshi</td></tr>
+    <tr><td><strong>Religion:</strong></td><td>Hindu</td></tr>
+    <tr><td><strong>Email:</strong></td><td>anupomdas636@gmail.com</td></tr>
+    <tr><td><strong>Phone:</strong></td><td>01673971416</td></tr>
+    <tr><td><strong>Location:</strong></td><td>Chattogram, Bangladesh</td></tr>
+    <tr><td><strong>Degree:</strong></td><td>B.Sc in CSTE</td></tr>
+    <tr><td><strong>Institute:</strong></td><td>Noakhali Science and Technology University (NSTU)</td></tr>
+  </table>
+
+  <div class="buttons">
+    <a href="CV/Created_CV_Anupom Das.pdf" download class="btn download-btn">
+      <i class="fas fa-download"></i> Download CV
+    </a>
+    <a href="../../index.html" class="btn back-btn">
+      <i class="fas fa-home"></i> Back to Home
+    </a>
+  </div>
+
+
+
+  <div class="certificate-section">
+    <button id="toggleButton" class="main-btn">Certificates</button>
+  
+    <div id="certificateButtons" class="hidden">
+      <button class="sub-btn" onclick="showImage('academic')">Academic</button>
+      <button class="sub-btn" onclick="showImage('competition')">Competition</button>
+      <button class="sub-btn" onclick="showImage('completion')">Completion</button>
+      <button class="sub-btn" onclick="showImage('work_e')">Work Experience</button>
+    </div>
+  
+    <div id="imageDisplay" class="image-container">
+      <img id="certificateImage" src="" alt="Certificate" style="display: none;">
+      <br>
+      
+      <a id="downloadBtn" href="#" download class="download-btn" style="display: none;">
+        <i class="fas fa-download"></i> Download Certificate
+      </a>
+  
+      <!-- ✅ Prev/Next buttons -->
+      <div id="navButtons" class="nav-buttons" style="display: none; margin-top: 10px;">
+        <button onclick="prevImage()">← Prev</button>
+        <button onclick="nextImage()">Next →</button>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+  
+  
+
+
+
+  <div class="social-links">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+
+</section>
+
+<script src="more.js"></script>
+</body>
+</html>

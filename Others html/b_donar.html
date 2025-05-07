@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>Volunteer Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>Blood Brigade, NSTU</h2>
+            <p><strong>Duration:</strong> Decenber 2018 - end of life</p>
+            <p><strong>Position:</strong> Donar</p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+              <li>Organizes and manages voluntary blood donation drives across the university.</li>
+              <li>Builds a strong network of student donors to respond to emergency blood requests.</li>
+              <li>Act as a bridge between the organization and university students by providing feedback and updates.</li>
+              <li>Raises awareness about the importance of blood donation through campaigns and events.</li>
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/BBNSTU/Blood_Donating pic.jpg" alt="Description of Image" class="image">
+                <p class="text"> 
+                    Actively participated in blood donation campaigns organized on campus. <br>
+
+                    Helped maintain a donor database and connected donors with recipients in emergencies. <br>
+
+                    Promoted awareness about the importance of voluntary blood donation among students. <br>
+                   
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      <section class="award-section">
+        <h2>Blood Donation Events</h2>
+        <button id="showAwardBtn" class="showAwardBtn">Donation</button>
+      
+        <div id="awardImageContainer" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/BBNSTU/bdonate1.jpg" alt="USC Award 1" class="award-image">
+            <h3></h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/BBNSTU/bdonate2.jpg" alt="USC Award 1" class="award-image">
+            <h3></h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/BBNSTU/bdonate3.jpg" alt="USC Award 1" class="award-image">
+            <h3></h3>
+          </div>
+          
+        </div>
+      </section>
+
+
+      <section class="award-section">
+        
+        <button id="showAward" class="showAwardBtn">Award</button>
+      
+        <div id="awardImageContainers" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/BBNSTU/Blood Donar Award.jpg" alt="USC Award 1" class="award-image" >
+            <h3>Blood Donation Award, BBNSTU</h3>
+          </div>
+           
+        </div>
+      </section>
+
+      
+      
+
+      <script>
+        document.getElementById("showAwardBtn").addEventListener("click", function () {
+          var container = document.getElementById("awardImageContainer");
+          if (container.style.display === "none") {
+            container.style.display = "flex";
+            this.textContent = "Hide ";
+          } else {
+            container.style.display = "none";
+            this.textContent = "Donation";
+          }
+        });
+      </script>
+
+<script>
+  document.getElementById("showAward").addEventListener("click", function () {
+    const awardContainer = document.getElementById("awardImageContainers");
+    if (awardContainer.style.display === "none") {
+      awardContainer.style.display = "flex";
+      this.textContent = "Hide Awards";
+    } else {
+      awardContainer.style.display = "none";
+      this.textContent = "Award";
+    }
+  });
+</script>
+
+</body>
+</html>

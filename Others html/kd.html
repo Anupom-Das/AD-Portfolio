@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiblyadham</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>Volunteer Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>Sri Sri Kaiblyadham Chattogram</h2>
+            <p><strong>Duration:</strong> January 2008 - Present</p>
+            <p><strong>Position:</strong> Volunteer</p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+                <li>Every Friday,  provide prasadam at Kaiblyadham, offering blessings and support to the devotees.</li>
+                <li>On every full moon night, Kaiblyadham celebrates with grand festivals, including worship and cultural events.</li>
+                <li>The biggest celebration is Durga Puja, where  actively participate in organizing and managing the festivities.</li>
+                <li> Distributing warm clothes to all the devotees during the winter season, ensuring their comfort and well-being.</li>
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/KD/kd sarasati pua.jpg" alt="Description of Image" class="image">
+                <p class="text"> Actively assist in organizing events, helping with setup, coordination, and ensuring smooth operations during activities.
+
+                     Engage with participants, provide support during events, and contribute to community outreach and welfare initiatives.
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      <section class="award-section">
+        
+        <button id="showAward" class="showAwardBtn">KD in Friday</button>
+      
+        <div id="awardImageContainers" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/KD/me at kd.jpg" alt="USC Award 1" class="award-image">
+            <h3>Friday with Volunteer dress at Kaiblyadham</h3>
+          </div>
+          
+          
+          
+        </div>
+      </section>
+
+      
+      
+
+    
+
+<script>
+  document.getElementById("showAward").addEventListener("click", function () {
+    const awardContainer = document.getElementById("awardImageContainers");
+    if (awardContainer.style.display === "none") {
+      awardContainer.style.display = "flex";
+      this.textContent = "Hide Awards";
+    } else {
+      awardContainer.style.display = "none";
+      this.textContent = "Award";
+    }
+  });
+</script>
+      
+</body>
+</html>

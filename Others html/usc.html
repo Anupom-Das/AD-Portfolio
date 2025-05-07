@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USC Experience</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>CLUB Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>USC Science Club</h2>
+            <p><strong>Duration:</strong> January 2022 - Septembar 2023</p>
+            <p><strong>Position:</strong> CA</p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+              <li>Promote the organization's events and opportunities on campus through posters, social media, and word-of-mouth.</li>
+              <li>Encourage fellow students to participate in workshops, webinars, hackathons, and other programs.</li>
+              <li>Act as a bridge between the organization and university students by providing feedback and updates.</li>
+              <li>Build a network of students and grow community engagement through communication and collaboration.</li>
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/USC/UCC campus ambassdor poster.jpg" alt="Description of Image" class="image">
+                <p class="text">Promoted events and engaged students through social media and campus outreach. <br>
+
+                    Managed communication between the organizing team and students, ensuring smooth event coordination.
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      <section class="award-section">
+        <h2>My Achievements</h2>
+        <button id="showAwardBtn" class="showAwardBtn">USC Award</button>
+      
+        <div id="awardImageContainer" style="display: none;" class="award-gallery">
+          <img src="../Image/Clubs/USC/Award/USC Award 1.jpg" alt="USC Award 1" class="award-image">
+          <img src="../Image/Clubs/USC/Award/USC Award 2.jpg" alt="USC Award 2" class="award-image">
+          <img src="../Image/Clubs/USC/Award/USC Award 3.jpg" alt="USC Award 3" class="award-image">
+        </div>
+      </section>
+
+      <script>
+        const showBtn = document.getElementById('showAwardBtn');
+        const awardContainer = document.getElementById('awardImageContainer');
+      
+        showBtn.addEventListener('click', () => {
+          awardContainer.style.display = 'flex';
+          showBtn.style.display = 'none'; // চাইলে বাটনটা লুকাবে
+        });
+      </script>
+      
+</body>
+</html>

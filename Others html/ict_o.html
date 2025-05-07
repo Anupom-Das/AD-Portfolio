@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USC Experience</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>CLUB Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>ICT Olympiad, Bangladesh</h2>
+            <p><strong>Duration:</strong> May 2022 - August 2022</p>
+            <p><strong>Position:</strong> CA</p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+                <li>Programming Competitions: Testing the coding and problem-solving abilities of participants.</li>
+                <li>Tech Seminars and Workshops: Offering knowledge-sharing sessions on emerging technologies and trends.</li>
+                <li>Project Exhibitions: Encouraging students to showcase their innovative tech projects.</li>
+                <li>Collaborative Learning: Fostering teamwork and communication skills in ICT-related tasks and challenges.</li>
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/ICT Olympiad/ICT Olympiad Ambassdor Poster.jpeg" alt="Description of Image" class="image">
+                <p class="text">
+                    Promoted the ICT Olympiad BD events on campus and engaged students through social media and outreach activities.
+                    Coordinated with the organizing team, helping to organize and execute various competitions and seminars for participants.
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      <section class="award-section">
+        
+        <button id="showAward" class="showAwardBtn">My Achievements</button>
+      
+        <div id="awardImageContainers" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/ICT Olympiad/ICT Olympaid certificate.png" alt="USC Award 1" class="award-image">
+            <h3></h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/ICT Olympiad/ICT Olympaid certificate 2.png" alt="USC Award 1" class="award-image">
+            <h3></h3>
+          </div>
+          
+          
+          
+        </div>
+      </section>
+
+      <script>
+        document.getElementById("showAward").addEventListener("click", function () {
+          const awardContainer = document.getElementById("awardImageContainers");
+          if (awardContainer.style.display === "none") {
+            awardContainer.style.display = "flex";
+            this.textContent = "Hide ";
+          } else {
+            awardContainer.style.display = "none";
+            this.textContent = "My Achievements";
+          }
+        });
+      </script>
+      
+
+      
+      
+</body>
+</html>

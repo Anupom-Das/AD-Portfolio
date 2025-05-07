@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inginous Experience</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>CLUB Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>Inginous Community</h2>
+            <p><strong>Duration:</strong> January 2022 - March 2022</p>
+            <p><strong>Position:</strong> Co-Ordinator</p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+                <ul>
+                    <li>
+                      Organizes educational quizzes to promote awareness about indigenous history and culture.
+                    </li>
+                    <li>
+                      Offers student scholarships to support underprivileged learners in continuing their education.
+                    </li>
+                    <li>
+                      Conducts awareness programs and campaigns to empower indigenous youth and promote inclusivity.
+                    </li>
+                  </ul>
+                  
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/Inginous Commionity/Co-Ordinator poster.png" alt="Description of Image" class="image">
+                <p class="text">
+                    <p class="text">I served as a Coordinator, managing quiz competitions and driving various educational initiatives.
+                    I played a key role in organizing events that inspired student participation and awareness.</p>
+
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      <section class="award-section">
+        
+        <button id="showAward" class="showAwardBtn">Certified</button>
+      
+        <div id="awardImageContainers" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/Inginous Commionity/Ekushey Quiz Co ordinator.jpeg" alt="USC Award 1" class="award-image">
+            <h3></h3>
+          </div>
+          
+          
+          
+          
+        </div>
+      </section>
+
+      <script>
+        document.getElementById("showAward").addEventListener("click", function () {
+          const awardContainer = document.getElementById("awardImageContainers");
+          if (awardContainer.style.display === "none") {
+            awardContainer.style.display = "flex";
+            this.textContent = "Hide ";
+          } else {
+            awardContainer.style.display = "none";
+            this.textContent = "Certified";
+          }
+        });
+      </script>
+      
+
+      
+      
+</body>
+</html>

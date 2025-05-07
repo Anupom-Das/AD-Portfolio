@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSTE Club</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>CLUB Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>CSTE Club</h2>
+            <p><strong>Duration:</strong> January 2024 - Septembar 2025</p>
+            <p><strong>Position:</strong> Executive Sports  </p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+                <li>Organizes tech events like coding contests, hackathons, and seminars.</li>
+                <li>Provides workshops and training on programming, web development, and AI.</li>
+                <li>Arranges sports and cultural programs to engage students.</li>
+                <li>Develops leadership and teamwork skills through active participation.</li>
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/CSTE Club/CSTE Club poster.jpg" alt="Description of Image" class="image">
+                <p class="text">As a dedicated sports member of the CSTE Club, I actively participate in organizing and managing sports events.
+                    I contribute to promoting physical activities and encouraging teamwork among students.
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      <section class="award-section">
+        <h2>Activities of CSTE Club</h2>
+        <button id="showAwardBtn" class="showAwardBtn">Club Events</button>
+      
+        <div id="awardImageContainer" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/brac it seminar.jpg" alt="USC Award 1" class="award-image">
+            <h3>Brac IT Seminar</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/contest.jpg" alt="USC Award 1" class="award-image">
+            <h3>Programming Contest</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/Carrier Session.jpg" alt="USC Award 1" class="award-image">
+            <h3>Carrier Session</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/club metting.jpg" alt="USC Award 1" class="award-image">
+            <h3>Club Meeting</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/indor sports.jpg" alt="USC Award 1" class="award-image">
+            <h3>Indoor Sports</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/cricket cham team.jpg" alt="USC Award 1" class="award-image">
+            <h3>Cricket Champ Team</h3>
+          </div>
+          
+        </div>
+      </section>
+
+
+      <section class="award-section">
+        
+        <button id="showAward" class="showAwardBtn">Award</button>
+      
+        <div id="awardImageContainers" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/chess award.jpg" alt="USC Award 1" class="award-image">
+            <h3>Chess Champions Award</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/Football cham award.jpg" alt="USC Award 1" class="award-image">
+            <h3>Football Champions Award</h3>
+          </div>
+          <div class="award-img-text">
+            <img src="../Image/Clubs/CSTE Club/Cricket Award.jpg" alt="USC Award 1" class="award-image">
+            <h3>Cricket Champions Award</h3>
+          </div>
+          
+          
+        </div>
+      </section>
+
+      
+      
+
+      <script>
+        document.getElementById("showAwardBtn").addEventListener("click", function () {
+          var container = document.getElementById("awardImageContainer");
+          if (container.style.display === "none") {
+            container.style.display = "flex";
+            this.textContent = "Hide Events";
+          } else {
+            container.style.display = "none";
+            this.textContent = "Club Events";
+          }
+        });
+      </script>
+
+<script>
+  document.getElementById("showAward").addEventListener("click", function () {
+    const awardContainer = document.getElementById("awardImageContainers");
+    if (awardContainer.style.display === "none") {
+      awardContainer.style.display = "flex";
+      this.textContent = "Hide Awards";
+    } else {
+      awardContainer.style.display = "none";
+      this.textContent = "Award";
+    }
+  });
+</script>
+
+      
+</body>
+</html>

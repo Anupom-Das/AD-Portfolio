@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFH Experience</title>
+
+    <link rel="stylesheet" href="other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">← Back</a>
+    
+
+    <section class="club-experience">
+
+        <div class="container">
+
+          <h1>CLUB Experiences</h1>
+
+          <div class="underline"></div>
+          
+            <div class="club-card">
+            <h2>MFH Science Club</h2>
+            <p><strong>Duration:</strong> January 2023 - December 2023</p>
+            <p><strong>Position:</strong> CA</p>
+            <p><strong>Activities:</strong></p>
+            <ul>
+              <li>Promote the organization's events and opportunities on campus through posters, social media, and word-of-mouth.</li>
+              <li>Encourage fellow students to participate in workshops, webinars, hackathons, and other programs.</li>
+              <li>Act as a bridge between the organization and university students by providing feedback and updates.</li>
+              <li>Build a network of students and grow community engagement through communication and collaboration.</li>
+            </ul>
+            </div>
+
+            <div class="image-text-container">
+                <img src="../Image/Clubs/MFH/MFH poster.jpg" alt="Description of Image" class="image">
+                <p class="text">Promoted events and engaged students through social media and campus outreach. <br>
+
+                    Managed communication between the organizing team and students, ensuring smooth event coordination.
+                </p>
+            </div>
+    
+          </div>
+
+          <div class="social-links">
+            <a href="https://m.facebook.com/anupom.das.1481169/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/anupom-das-550480319/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Anupom-Das" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+      </section>
+
+      
+
+
+      <section class="award-section">
+        
+        <button id="showAward" class="showAwardBtn">My Achievements</button>
+      
+        <div id="awardImageContainers" style="display: none;" class="award-gallery">
+          <div class="award-img-text">
+            <img src="../Image/Clubs/MFH/MFH CA certificate.jpeg" alt="USC Award 1" class="award-image">
+            <h3>Best CA Award</h3>
+          </div>
+          
+          
+          
+        </div>
+      </section>
+
+      
+      
+
+     
+
+<script>
+  document.getElementById("showAward").addEventListener("click", function () {
+    const awardContainer = document.getElementById("awardImageContainers");
+    if (awardContainer.style.display === "none") {
+      awardContainer.style.display = "flex";
+      this.textContent = "Hide ";
+    } else {
+      awardContainer.style.display = "none";
+      this.textContent = "My Achievemets";
+    }
+  });
+</script>
+      
+</body>
+</html>
