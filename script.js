@@ -37,6 +37,13 @@ const roles = [
   }
   
   typeEffect();
+
+
+
+   // Scroll to top when button clicked
+   document.getElementById("goTopBtn").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
   
 
 
