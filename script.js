@@ -230,7 +230,8 @@ const testimonials = [
     "Image/Award/city clg award.jpg",
     "Image/Award/Chess_Champ.jpg",
     "Image/Award/Blood_B.jpg",
-    "Image/Award/USC.jpg"
+    "Image/Award/USC.jpg",
+    "Image/Award/MFH Award.jpg"
     
   ];
 
@@ -385,21 +386,54 @@ document.getElementById('subscribeForm').addEventListener('submit', function (ev
 //form fill korle geogle sheet e  jabe
 
 
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbzZaaU1QXfP4hYf-hVKtcw5zfxCjkZAHWJsUpFJ8ulXPIPiYZxa4_3uUDRVXdJCt0XfVg/exec'
-// 			const form = document.forms['contact-form']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwDvFzUVckeU1mzh5JfT9HxlnfjAixONis9j1q2qE3u5nfbDv_ZIGx_gbg8q_dvQaBf/exec'
+			const formm = document.forms['contactform']
 		  
-// 			form.addEventListener('submit', e => {
-// 			  e.preventDefault()
-// 			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-// 				.then(response => alert("Thank you! your form is submitted successfully." ))
-// 				.then(() => {  window.location.reload(); })
-// 				.catch(error => console.error('Error!', error.message))
-// 			})
+			formm.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(formm)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
 
 
 
+      //submit e click krle new link e niye jabe - akane submit krle amr email e asbe
+  const forme = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // ফর্ম সাবমিট বন্ধ করলাম
+    window.location.href = "https://formsubmit.co/el/pigomi"; // আপনার পছন্দের লিংক দিন
+  });
 
 
+//Subscribe krle Thank You email dibe
+
+ const formmm = document.getElementById('subscribeForm');
+const scriptURL_email = 'https://script.google.com/macros/library/d/1UXZvyJaMl0XtlpDMRR23kcOv83-rGSl5b6Iy8jvsJ2l9hWerk-4_WeM0/1';  // তোমার GAS ওয়েব অ্যাপ URL
+
+formmm.addEventListener('submit', e => {
+  e.preventDefault();
+
+  fetch(scriptURL_email, {
+    method: 'POST',
+    body: new FormData(formmm)
+  })
+  .then(response => response.text())
+  .then(result => {
+    if(result === "Success"){
+      alert("Thank you for subscribing!");
+      formmm.reset();
+    } else {
+      alert("Subscription failed: " + result);
+    }
+  })
+  .catch(error => {
+    alert("Something went wrong!");
+    console.error(error);
+  });
+});
 
 
       
